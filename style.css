@@ -140,7 +140,7 @@ body::-webkit-scrollbar-track {
 
 .card1 {
     background-color: #e8eac8;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -148,7 +148,7 @@ body::-webkit-scrollbar-track {
 
 .card2 {
     background-color: #e3bfbf;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -156,7 +156,7 @@ body::-webkit-scrollbar-track {
 
 .card3 {
     background-color: #bfdfe3;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -164,7 +164,7 @@ body::-webkit-scrollbar-track {
 
 .card4 {
     background-color: #d6bee1;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
