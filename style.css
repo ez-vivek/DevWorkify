@@ -421,7 +421,7 @@ body::-webkit-scrollbar-track {
 }
 
 .perk-card1:hover{
-    box-shadow: 4px 4px 0 #000;
+    box-shadow: 4px 4px 0 #676767;
     transform: translate(+4px, +4px);
 }
 
@@ -435,7 +435,7 @@ body::-webkit-scrollbar-track {
 }
 
 .perk-card2:hover{
-    box-shadow: 4px 4px 0 #000;
+    box-shadow: 4px 4px 0 #676767;
     transform: translate(+4px, -4px);
 }
 
@@ -449,7 +449,7 @@ body::-webkit-scrollbar-track {
 }
 
 .perk-card3:hover{
-    box-shadow: 4px 4px 0 #000;
+    box-shadow: 4px 4px 0 #676767;
     transform: translate(-4px, +4px);
 }
 
@@ -463,7 +463,7 @@ body::-webkit-scrollbar-track {
 }
 
 .perk-card4:hover{
-    box-shadow: 4px 4px 0 #000;
+    box-shadow: 4px 4px 0 #676767;
     transform: translate(+4px, -4px);
 }
 
