@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="icon-btn align-right-btn" aria-label="Align Right" title="Align Right">
                     <i class="uil uil-align-right"></i>
                 </button>
-                <input type="color" class="color-picker" aria-label="Color Picker" title="Color Picker">
             </div>
             <button class="delete-btn" aria-label="Delete note" title="Delete note">×</button>
         `;
@@ -52,12 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         note.querySelector('.align-left-btn').addEventListener('click', () => document.execCommand('justifyLeft'));
         note.querySelector('.align-center-btn').addEventListener('click', () => document.execCommand('justifyCenter'));
         note.querySelector('.align-right-btn').addEventListener('click', () => document.execCommand('justifyRight'));
-
-        // Color picker functionality
-        const colorPicker = note.querySelector('.color-picker');
-        colorPicker.addEventListener('input', () => {
-            noteContent.style.color = colorPicker.value;
-        });
 
         // Focus the content when editing
         noteContent.addEventListener('focus', () => {
