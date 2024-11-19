@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Daily Planner & Tracker</title>
+  <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DaySculptor : plan and track your tasks!</h1>
+    <div class="task-container">
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Task description">
+        <input type="date" id="taskDate" placeholder="Set date">
+        <input type="time" id="taskStartTime" placeholder="Start time">
+        <input type="time" id="taskEndTime" placeholder="End time">
+        <button onclick="addTask()">Add Task</button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+    <div class="progress-container">
+      <p>Total Completion: <span id="completionPercentage">0%</span></p>
+      <progress id="progressBar" value="0" max="100"></progress>
+    </div>
+  </div>
+
+  <script src="todolist.js"></script>
+</body>
+</html>
