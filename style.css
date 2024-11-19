@@ -11,6 +11,14 @@ body {
     background-color: #ffffff;
 }
 
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
 .navbar {
     background-color: #b5b5b536;
     padding: 13px 20px;
@@ -130,7 +138,10 @@ body {
     transition: transform 0.3s ease;
 }
 
-.card1,.card2,.card3,.card4 h3 {
+.card1,
+.card2,
+.card3,
+.card4 h3 {
     font-family: 'Architects Daughter', cursive;
     color: #000000;
 }
@@ -145,24 +156,24 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.card1>a{
+.card1>a {
     text-decoration: none;
-    color :white;
+    color: white;
 }
 
-.card2>a{
+.card2>a {
     text-decoration: none;
-    color :white;
+    color: white;
 }
 
-.card3>a{
+.card3>a {
     text-decoration: none;
-    color :white;
+    color: white;
 }
 
-.card4>a{
+.card4>a {
     text-decoration: none;
-    color :white;
+    color: white;
 }
 
 .card-btn:hover {
@@ -193,12 +204,13 @@ body {
     border-radius: 10px;
 }
 
-footer { 
+footer {
     background-color: #b5b5b536;
     color: #000000;
     text-align: center;
     padding: 10px 10px;
 }
-footer>p{
+
+footer>p {
     margin-bottom: 0;
 }
