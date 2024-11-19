@@ -156,10 +156,10 @@ body::-webkit-scrollbar-track {
     transform: translateY(-5px);
 }
 
-.card:nth-child(1) { background-color: #2b2440; animation-delay: 0.3s; }
-.card:nth-child(2) { background-color: #1f3830; animation-delay: 0.6s; }
-.card:nth-child(3) { background-color: #3d3426; animation-delay: 0.9s; }
-.card:nth-child(4) { background-color: #1f2937; animation-delay: 1.2s; }
+.card:nth-child(1) { background-color: #aea8c3; animation-delay: 0.3s; }
+.card:nth-child(2) { background-color: #a5bab4; animation-delay: 0.6s; }
+.card:nth-child(3) { background-color: #b3aca0; animation-delay: 0.9s; }
+.card:nth-child(4) { background-color: #a8b3c3; animation-delay: 1.2s; }
 
 .card-btn {
     background-color: #3d3d3d;
