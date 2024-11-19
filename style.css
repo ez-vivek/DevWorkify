@@ -13,43 +13,60 @@ body {
     min-height: 100vh;
 }
 
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
 .handwritten {
     font-family: 'Architects Daughter', cursive;
 }
 
-/* Navbar Styles */
 .navbar {
-    background-color: #2d2d2d;
-    padding: 1rem 2rem;
+    background-color: #9fc3f136;
+    padding: 13px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
-.nav-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links {
+.logo {
+    margin-left: 2.5%;
     display: flex;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: #ffffff;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
     text-decoration: none;
-    transition: color 0.3s;
+    color: #333;
 }
 
-.nav-links a:hover {
-    color: #9f9f9f;
+.logo-text>a {
+    margin-left: 8px;
+    text-decoration: none;
+    color: black;
 }
 
+.navbar-actions {
+    display: flex;
+    gap: 10px;
+    margin-right: 2.5%;
+}
+
+.navbar-actions button {
+    background: none;
+    text-decoration: none;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
 /* Main Content Styles */
 .container {
     max-width: 1200px;
