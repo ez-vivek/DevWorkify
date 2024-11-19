@@ -45,20 +45,35 @@ html {
     border-radius: 50%;
 }
 .add-note-btn {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
+    outline: 0;
+    grid-gap: 8px;
+    align-items: center;
+    background: 0 0;
+    border: 1px solid #000;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 10px auto;
-    display: block;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 16px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 7px 25px;
+    width: 989x;
+    height: 45px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
 }
 
 .add-note-btn:hover {
-    background-color: #e67e22;
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px, -4px);
+
+}
+
+.add-note-btn:focus-visible {
+    outline-offset: 1px;
 }
 
 .sticky-note {
