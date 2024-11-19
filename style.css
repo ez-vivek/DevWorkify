@@ -26,7 +26,8 @@ body::-webkit-scrollbar-track {
 }
 
 .navbar {
-    background-color: #9fc3f136;
+    background-color: #1a1a1a;
+    color:white;
     padding: 13px 20px;
     display: flex;
     justify-content: space-between;
@@ -40,13 +41,13 @@ body::-webkit-scrollbar-track {
     font-weight: bold;
     font-size: 1.2em;
     text-decoration: none;
-    color: #333;
+    color: rgb(201, 201, 201);
 }
 
 .logo-text>a {
     margin-left: 8px;
     text-decoration: none;
-    color: black;
+    color: rgb(201, 201, 201);
 }
 
 .navbar-actions {
@@ -65,7 +66,7 @@ body::-webkit-scrollbar-track {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: rgb(201, 201, 201);
 }
 /* Main Content Styles */
 .container {
