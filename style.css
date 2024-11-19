@@ -24,7 +24,7 @@ body::-webkit-scrollbar-track {
 
 .navbar {
     /* background-color: #aca46b36; */
-    background: linear-gradient(180deg, #9fc3f136, #f3d1f443, #ffffff);
+      background: linear-gradient(180deg, #9fc3f136, #f3d1f431, #ffffff);
     padding: 13px 20px;
     display: flex;
     justify-content: space-between;
