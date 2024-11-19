@@ -197,5 +197,8 @@ footer {
     background-color: #b5b5b536;
     color: #000000;
     text-align: center;
-    padding: 5px 5px;
+    padding: 10px 10px;
+}
+footer>p{
+    margin-bottom: 0;
 }
