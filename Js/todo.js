@@ -1,80 +1,76 @@
 let tasks = [];
 
-function addTask() {
-  const taskInput = document.getElementById("taskInput");
-  const taskDate = document.getElementById("taskDate");
-  const taskStartTime = document.getElementById("taskStartTime");
-  const taskEndTime = document.getElementById("taskEndTime");
+        function addTask() {
+            const description = document.getElementById('taskInput').value;
+            const date = document.getElementById('taskDate').value;
+            const startTime = document.getElementById('taskStartTime').value;
+            const endTime = document.getElementById('taskEndTime').value;
 
-  const taskName = taskInput.value.trim();
-  const date = taskDate.value;
-  const startTime = taskStartTime.value;
-  const endTime = taskEndTime.value;
+            if (description && date && startTime && endTime) {
+                const task = {
+                    id: Date.now(),
+                    description,
+                    date,
+                    startTime,
+                    endTime,
+                    completed: false
+                };
 
-  if (!taskName || !date || !startTime || !endTime) {
-    alert("Please enter all fields: task, date, start time, and end time.");
-    return;
-  }
+                tasks.push(task);
+                renderTasks();
+                updateProgress();
+                clearInputs();
+            } else {
+                alert('Please fill in all fields !!');
+            }
+        }
 
-  const task = {
-    name: taskName,
-    date: date,
-    startTime: startTime,
-    endTime: endTime,
-    completed: false
-  };
+        function renderTasks() {
+            const taskList = document.getElementById('taskList');
+            taskList.innerHTML = '';
 
-  tasks.push(task);
-  taskInput.value = "";
-  taskDate.value = "";
-  taskStartTime.value = "";
-  taskEndTime.value = "";
-  renderTasks();
-}
+            tasks.forEach(task => {
+                const li = document.createElement('li');
+                li.className = 'task';
+                li.innerHTML = `
+                    <label>
+                        <input type="checkbox" ${task.completed ? 'checked' : ''} onchange="toggleTask(${task.id})">
+                        <span class="task-details">
+                            ${task.description} - ${task.date}, ${task.startTime} to ${task.endTime}
+                        </span>
+                    </label>
+                    <button class="delete-btn" onclick="deleteTask(${task.id})" aria-label="Delete task">×</button>
+                `;
+                taskList.appendChild(li);
+            });
+        }
 
-function renderTasks() {
-  const taskList = document.getElementById("taskList");
-  taskList.innerHTML = "";
+        function toggleTask(id) {
+            const task = tasks.find(t => t.id === id);
+            if (task) {
+                task.completed = !task.completed;
+                updateProgress();
+            }
+        }
 
-  tasks.forEach((task, index) => {
-    const taskItem = document.createElement("li");
-    taskItem.className = "task";
+        function deleteTask(id) {
+            tasks = tasks.filter(t => t.id !== id);
+            renderTasks();
+            updateProgress();
+        }
 
-    const taskCompletion = task.completed ? "100%" : "0%";
+        function updateProgress() {
+            const totalTasks = tasks.length;
+            const completedTasks = tasks.filter(t => t.completed).length;
+            const percentage = totalTasks === 0 ? 0 : Math.round((completedTasks / totalTasks) * 100);
 
-    taskItem.innerHTML = `
-      <label>
-        <input type="checkbox" onchange="toggleTask(${index})" ${task.completed ? "checked" : ""}>
-        <span>${task.date} - ${task.startTime} to ${task.endTime}: ${task.name}</span>
-      </label>
-      <span class="percentage">Completed: ${taskCompletion}</span>
-      <button onclick="removeTask(${index})">Remove</button>
-    `;
+            document.getElementById('completionPercentage').textContent = `${percentage}%`;
+            document.getElementById('progressBar').value = percentage;
+        }
 
-    taskList.appendChild(taskItem);
-  });
-
-  updateProgress();
-}
-
-function toggleTask(index) {
-  tasks[index].completed = !tasks[index].completed;
-  renderTasks();
-}
-
-function removeTask(index) {
-  tasks.splice(index, 1);
-  renderTasks();
-}
-
-function updateProgress() {
-  const completedTasks = tasks.filter(task => task.completed).length;
-  const totalTasks = tasks.length;
-  const completionPercentage = totalTasks ? Math.round((completedTasks / totalTasks) * 100) : 0;
-
-  document.getElementById("completionPercentage").textContent = `${completionPercentage}%`;
-  document.getElementById("progressBar").value = completionPercentage;
-}
-
-// Initial render
-renderTasks();
+        function clearInputs() {
+            document.getElementById('taskInput').value = '';
+            document.getElementById('taskDate').value = '';
+            document.getElementById('taskStartTime').value = '';
+            document.getElementById('taskEndTime').value = '';
+        }

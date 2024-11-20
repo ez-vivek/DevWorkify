@@ -46,20 +46,19 @@
       <p>Keep life organized, use it for planning, executing, and finding what & when you need it.<br>
         Unleash your potential and transform ideas into reality.</p>
       <button class="hoverbutton1">
-        <a href="#main-content">
+        <a href="">
           <p>Add Task</p>
         </a>
       </button>
     </section>
   </div>
   <div class="container">
-    <h1>DaySculptor : plan and track your tasks!</h1>
     <div class="task-container">
       <div class="task-input">
-        <input type="text" id="taskInput" placeholder="Task description">
-        <input type="date" id="taskDate" placeholder="Set date">
-        <input type="time" id="taskStartTime" placeholder="Start time">
-        <input type="time" id="taskEndTime" placeholder="End time">
+        <input type="text" id="taskInput" placeholder="Task description" aria-label="Task description">
+        <input type="date" id="taskDate" aria-label="Task date">
+        <input type="time" id="taskStartTime" aria-label="Task start time">
+        <input type="time" id="taskEndTime" aria-label="Task end time">
         <button onclick="addTask()">Add Task</button>
       </div>
       <ul id="taskList"></ul>
