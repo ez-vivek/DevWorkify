@@ -291,6 +291,7 @@ body::-webkit-scrollbar-track {
 .hoverbutton5>a>p {
     margin-top: 0.9em;
     color: black;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .hoverbutton5:hover {
