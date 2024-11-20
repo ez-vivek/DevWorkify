@@ -380,6 +380,10 @@ body::-webkit-scrollbar-track {
     color: white;
 }
 
+.card4>p {
+    font-family: 'Architects Daughter', cursive;
+}
+
 .card-btn:hover {
     background-color: #131212;
 }
@@ -422,7 +426,7 @@ body::-webkit-scrollbar-track {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.perk-card1:hover{
+.perk-card1:hover {
     box-shadow: 4px 4px 0 #676767;
     transform: translate(+4px, +4px);
 }
@@ -436,7 +440,7 @@ body::-webkit-scrollbar-track {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.perk-card2:hover{
+.perk-card2:hover {
     box-shadow: 4px 4px 0 #676767;
     transform: translate(+4px, -4px);
 }
@@ -450,12 +454,12 @@ body::-webkit-scrollbar-track {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.perk-card3:hover{
+.perk-card3:hover {
     box-shadow: 4px 4px 0 #676767;
     transform: translate(-4px, +4px);
 }
 
-.perk-card4{
+.perk-card4 {
     background-color: rgba(98, 96, 96, 0.1);
     text-align: center;
     padding: 1.5rem;
@@ -464,7 +468,7 @@ body::-webkit-scrollbar-track {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.perk-card4:hover{
+.perk-card4:hover {
     box-shadow: 4px 4px 0 #676767;
     transform: translate(+4px, -4px);
 }
