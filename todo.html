@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dev Workspace/ToDo</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="Image/dev favicon.png" type="favicon">
+  <link rel="stylesheet" href="Css/style.css">
   <link rel="stylesheet" href="Css/todo.css">
 </head>
+
 <body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <ion-icon name="logo-amplify"></ion-icon>
+      <span class="logo-text"><a href="index.html">Dev.Workspace</a></span>
+    </div>
+    <div class="navbar-actions">
+      <button id="githubBtn" aria-label="GitHub" title="Github">
+        <i class="bi bi-github"></i>
+      </button>
+      <button id="linkedinBtn" aria-label="LinkedIn" title="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </button>
+      <button id="instagramBtn" aria-label="Instagram" title="Instagram">
+        <i class="bi bi-instagram"></i>
+      </button>
+      <button id="xBtn" aria-label="X" title="X">
+        <i class="bi bi-twitter-x"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="wrappercontainer">
+    <section class="hero">
+      <h1>Your Ultimate Destination for Creativity</h1>
+      <p>Keep life organized, use it for planning, executing, and finding what & when you need it.<br>
+        Unleash your potential and transform ideas into reality.</p>
+      <button class="hoverbutton1">
+        <a href="#main-content">
+          <p>Get Started</p>
+        </a>
+      </button>
+    </section>
+  </div>
   <div class="container">
     <h1>DaySculptor : plan and track your tasks!</h1>
     <div class="task-container">
@@ -27,4 +72,5 @@
 
   <script src="Js/todo.js"></script>
 </body>
+
 </html>
