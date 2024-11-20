@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Workify/calendar</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Image/dev favicon.png" type="favicon">
+    <link rel="stylesheet" href="Css/calendar.css">
+    <link rel="stylesheet" href="Css/style.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <ion-icon name="logo-amplify"></ion-icon>
+            <span class="logo-text"><a href="index.html">Dev.Workify</a></span>
+        </div>
+        <div class="navbar-actions">
+            <button id="githubBtn" aria-label="GitHub" title="Github">
+                <i class="bi bi-github"></i>
+            </button>
+            <button id="linkedinBtn" aria-label="LinkedIn" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </button>
+            <button id="instagramBtn" aria-label="Instagram" title="Instagram">
+                <i class="bi bi-instagram"></i>
+            </button>
+            <button id="xBtn" aria-label="X" title="X">
+                <i class="bi bi-twitter-x"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="wrappercontainer">
+        <section class="hero">
+            <h1>Your Ultimate Destination for Creativity</h1>
+            <p>Keep life organized, use it for planning, executing, and finding what & when you need it.<br>
+                Unleash your potential and transform ideas into reality.</p>
+            <button class="hoverbutton1">
+                <a href="#main-content">
+                    <p>Mark Important</p>
+                </a>
+            </button>
+        </section>
+        <div class="calendar">
+            <div class="header">
+                <button class="nav-btn" id="prevBtn"><i class="bi bi-chevron-left"></i></button>
+                <div class="month-year" id="monthYear"></div>
+                <button class="nav-btn" id="nextBtn"><i class="bi bi-chevron-right"></i></button>
+            </div>
+            <div class="weekdays" id="weekdays"></div>
+            <div class="days" id="days"></div>
+        </div>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+        <script src="Js/calendar.js"></script>
+</body>
+
+</html>
