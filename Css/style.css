@@ -432,6 +432,10 @@ body::-webkit-scrollbar-track {
     transform: translate(+4px, +4px);
 }
 
+.perk-card1>p{
+    margin-top:10px;
+}
+
 .perk-card2 {
     background-color: rgba(98, 96, 96, 0.1);
     text-align: center;
@@ -444,6 +448,10 @@ body::-webkit-scrollbar-track {
 .perk-card2:hover {
     box-shadow: 4px 4px 0 #676767;
     transform: translate(+4px, -4px);
+}
+
+.perk-card2>p{
+    margin-top:10px;
 }
 
 .perk-card3 {
@@ -460,6 +468,10 @@ body::-webkit-scrollbar-track {
     transform: translate(-4px, +4px);
 }
 
+.perk-card3>p{
+    margin-top:10px;
+}
+
 .perk-card4 {
     background-color: rgba(98, 96, 96, 0.1);
     text-align: center;
@@ -472,6 +484,10 @@ body::-webkit-scrollbar-track {
 .perk-card4:hover {
     box-shadow: 4px 4px 0 #676767;
     transform: translate(+4px, -4px);
+}
+
+.perk-card4>p{
+    margin-top:10px;
 }
 
 footer {
