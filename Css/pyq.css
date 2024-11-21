@@ -3,24 +3,55 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding: 20px;
 }
 
+/* Card Styles */
 .card {
-    width: 300px;
-    height: 400px;
+    width: 280px;
+    height: 350px;
     background: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
     position: relative;
-
 }
 
-.card-header {
-    background-color: #333;
-    color: white;
+.card-header1 {
+    background-color: #E8EAC8;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-header2 {
+    background-color: #E3BFBF;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-header3 {
+    background-color: #BFDFE3;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-header4 {
+    background-color: #D6BEE1;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 15px;
     font-size: 1.2rem;
@@ -31,41 +62,65 @@
 .card-body {
     padding: 20px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .card-body p {
     margin-bottom: 20px;
     font-size: 1rem;
     color: #555;
+    border: 2px solid #bbb;
+}
+
+/* Buttons Positioned at Bottom */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 20px;
 }
 
 .sem-button {
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-    padding: 12px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
+    outline: 0;
+    grid-gap: 8px;
+    align-items: center;
+    background: 0 0;
+    border: 1px solid #000;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 16px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 7px 25px;
+    width: 989x;
+    height: 45px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
 }
 
 .sem-button:hover {
-    background-color: #555;
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px, -4px);
 }
 
+.sem-button:focus-visible {
+    outline-offset: 1px;
+
+}
+
+/* Card Reveal */
 .card-reveal {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #333;
-    color: white;
+    background-color: #E8EAC8;
+    color: rgb(0, 0, 0);
     padding: 30px;
     transform: translateY(100%);
     transition: transform 0.4s ease-in-out;
@@ -82,11 +137,11 @@
 .card-reveal a {
     display: block;
     margin: 10px 0;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1rem;
     padding: 10px 20px;
-    border: 2px solid white;
+    border: 2px solid #bbb;
     border-radius: 25px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -96,6 +151,9 @@
     color: #333;
 }
 
+
+
+/* Close Button */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -112,6 +170,7 @@
     color: #ff4444;
 }
 
+/* Responsive Layout */
 @media (max-width: 768px) {
     .card {
         width: 90%;
