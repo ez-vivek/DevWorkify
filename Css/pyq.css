@@ -27,7 +27,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    
+
 }
 
 .card-header2 {
@@ -71,7 +71,7 @@
     font-size: 1rem;
     color: #555;
     border: 1px solid #bbbbbb79;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: 'Architects Daughter', cursive;
 }
 
