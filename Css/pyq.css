@@ -27,6 +27,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    
 }
 
 .card-header2 {
@@ -69,7 +70,9 @@
     margin-bottom: 20px;
     font-size: 1rem;
     color: #555;
-    border: 2px solid #bbb;
+    border: 1px solid #bbbbbb79;
+    border-radius: 20px;
+    font-family: 'Architects Daughter', cursive;
 }
 
 /* Buttons Positioned at Bottom */
@@ -77,7 +80,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .sem-button {
@@ -110,64 +113,6 @@
 .sem-button:focus-visible {
     outline-offset: 1px;
 
-}
-
-/* Card Reveal */
-.card-reveal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #E8EAC8;
-    color: rgb(0, 0, 0);
-    padding: 30px;
-    transform: translateY(100%);
-    transition: transform 0.4s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-reveal.active {
-    transform: translateY(0);
-}
-
-.card-reveal a {
-    display: block;
-    margin: 10px 0;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border: 2px solid #bbb;
-    border-radius: 25px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.card-reveal a:hover {
-    background-color: white;
-    color: #333;
-}
-
-
-
-/* Close Button */
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.close-btn:hover {
-    color: #ff4444;
 }
 
 /* Responsive Layout */
