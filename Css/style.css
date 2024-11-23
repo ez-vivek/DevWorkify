@@ -411,7 +411,7 @@ body::-webkit-scrollbar-track {
     box-shadow: 
     5px 5px 10px rgba(0, 0, 0, 0.2), 
     -5px -5px 10px rgba(0, 0, 0, 0.2);
-    border: 10px solid #57565652;
+    border: 5px solid #57565652;
 }
 
 .video-container:hover {
