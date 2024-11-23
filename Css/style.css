@@ -408,6 +408,10 @@ body::-webkit-scrollbar-track {
     border-radius: 20px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.2), 
+    -5px -5px 10px rgba(0, 0, 0, 0.2);
+    border: 10px solid #57565652;
 }
 
 .video-container:hover {
