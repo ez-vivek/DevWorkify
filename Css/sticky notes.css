@@ -159,6 +159,10 @@
     overflow-y: auto;
 }
 
+.note-content::-webkit-scrollbar {
+    display: none;
+    }
+
 .icons-toolbar {
     position: absolute;
     bottom: 10px;
